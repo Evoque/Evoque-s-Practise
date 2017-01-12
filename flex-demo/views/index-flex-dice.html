@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title> Flexable Dice </title>
+  <style>
+    body {
+      background: lightblue;
+    }
+
+    .container {
+      background: black;
+      display: flex;
+      width: 260px;
+      flex-wrap: wrap;
+      border-radius: 10px;
+    }
+
+    .dice {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      border: 5px solid #D1D1D1;
+      border-color: #FFFFFF #D1D1D1 #B3B2B3 #D1D1D1;
+      background: #E4E3E3;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    div {
+      color: white;
+      text-align: center;
+    }
+
+    .point {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background: black;
+      margin: 5px;
+    }
+
+    .dice-single-center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dice-two-opposite {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .dice-two-opposite :nth-child(2) {
+      align-self: flex-end;
+    }
+ 
+    .d-two {
+      align-self: center;
+    } 
+    .d-three {
+      align-self: flex-end;
+    } 
+
+    .dice-four-corner {
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    /*.f-two {
+      align-self: flex-end;
+    } */
+
+    .f-three {
+      align-self: flex-end;
+    }
+
+
+    .box { 
+      display: flex; 
+      flex-direction: column; 
+      justify-content: space-between;
+    } 
+    .column { 
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .single-container {
+      width: 150px;
+      height: 150px;
+      background: black;
+      border-radius: 10px;
+      margin: 10px;  
+      display: flex;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- single & center -->
+    <div class="dice dice-single-center">
+      <div class="point"></div>
+    </div>
+
+    <!-- two opposite angles -->
+    <div class="dice dice-two-opposite">
+      <div class="point"></div>
+      <div class="point"></div>
+    </div>
+
+    <!-- three catercorner -->
+    <div class="dice .dice-three-catercorner">
+      <div class="point"></div>
+      <div class="point d-two"></div>
+      <div class="point d-three"></div>
+    </div>
+
+    <!-- four corners -->
+    <div class="dice box">
+      <div class="column">
+        <div class="point">1</div>
+        <div class="point">2</div>
+      </div>
+      <div class="column">
+        <div class="point">3</div>
+        <div class="point">4</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="single-container">
+    <div class="dice">
+
+    </div>
+  </div>
+</body>
+
+</html>

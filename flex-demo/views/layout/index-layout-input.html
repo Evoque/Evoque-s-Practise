@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title> 输入框的布局 </title> 
+  <style>
+     
+     .container {
+       width: 200px;
+       margin: 0 auto;
+       background: lightcyan;
+       padding: 10px;
+     }
+
+     .input-addon {
+       display: flex;
+       flex-wrap: wrap;
+     }
+
+     .input-addon-field {
+       flex: 1; 
+       border: 1px solid #F3F1EE;
+       border-right: 0;
+     }
+     .input-addon-span {
+       flex-basis: 100%;
+     }
+
+     .input-addon-item {
+       background: #F3F1EE;
+       border: 1px solid #F3F1EE;
+       border-left: 0;
+     }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+  <div class="input-addon">
+    <span class="input-addon-span">Add-on Prepended</span>
+    <input type="text" class="input-addon-field">
+    <button class="input-addon-item">...</button>
+  </div>
+
+  </div>
+</body>
+
+</html>

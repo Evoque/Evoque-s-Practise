@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title></title>
+
+  <style>
+    .container {
+      background: black;
+      display: flex;
+      width: 400px;
+      flex-wrap: wrap;
+      border-radius: 10px; 
+      margin: 0 auto;
+    }
+
+    .dice {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      border: 5px solid #D1D1D1;
+      border-color: #FFFFFF #D1D1D1 #B3B2B3 #D1D1D1;
+      background: #E4E3E3;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    div {
+      color: white;
+      text-align: center;
+    }
+
+    .point {
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      background: black;
+      margin: 5px; 
+    } 
+    .six {
+      align-content: space-between;
+    }
+
+
+    .mul {
+      flex-direction: column;
+    }
+    .row1 {
+      display: flex;
+    }
+    .mul :nth-child(2) {
+      align-self: center;
+    }
+
+    .mul > :nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row {
+      flex-basis: 100%;
+      display: flex;
+    }
+    .row:nth-child(2) {
+      justify-content: flex-start;
+    }
+    .row:nth-child(3) {
+      justify-content: flex-end;
+    }
+    
+ 
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dice six">
+      <span class="point">1</span>
+      <span class="point">2</span>
+      <span class="point">3</span>
+      <span class="point">4</span>
+      <span class="point">5</span>
+      <span class="point">6</span>
+    </div>
+
+    <div class="dice mul">
+      <div class="row1">
+        <span class="point">1</span>
+        <span class="point">2</span>
+        <span class="point">3</span>
+      </div>
+      <div class="row1">
+        <span class="point">4</span>
+      </div>
+      <div class="row1">
+        <span class="point">5</span>
+        <span class="point">6</span>
+      </div>
+    </div>
+
+    <div class="dice">
+      <div class="row">
+        <span class="point">1</span>
+        <span class="point">2</span>
+        <span class="point">3</span>
+      </div>
+      <div class="row">
+        <span class="point">4</span>
+      </div>
+      <div class="row">
+        <span class="point">5</span>
+        <span class="point">6</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

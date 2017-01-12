@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='UTF-8'>
+  <title> Holy Grail Layout </title>
+  <style>
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      background: lightgray;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .header {
+      background: #5B5B5B;
+      flex: 0 0 50px;
+    } 
+
+    .body {
+      flex: 1; 
+      display: flex;
+      min-height: 200px;
+    }
+    .body .left {
+      background: #62B4D9;
+      flex: 0 0 30%;
+    }
+    .body .center {
+      background: #D0D0D0;
+      flex: 0 0 50%;
+    }
+    .body .right {
+      background: #FF5A28;
+      flex: 0 0 20%;
+    }
+
+    .footer {
+      background: #5B5B5B;
+      flex: 0 0 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">#header</div>
+    <div class="body">
+      <div class="left">#left</div>
+      <div class="center">#center</div>
+      <div class="right">#right(margin-right:-150px;)</div>
+    </div>
+    <div class="footer">#footer</div>
+  </div>
+
+</body>
+
+</html>
